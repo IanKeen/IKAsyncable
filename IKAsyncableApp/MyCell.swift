@@ -25,8 +25,6 @@ class MyCell : UITableViewCell, IKAsyncable {
     func ikAsyncOperationState(state: IKAsyncOperationState) {
         let color: UIColor
         switch state {
-        case .Pending:
-            color = .whiteColor()
         case .InProgress:
             color = .yellowColor()
         case .Complete(let result):

@@ -34,13 +34,7 @@ public final class IKAsyncOperation {
     //MARK : - Public Functions
     public func performOperation(maxFailures: Int) {
         if let state = self.state {
-            switch state {
-            case .Pending:
-                self.executeOperation(maxFailures)
-                
-            default:
-                self.dispatchStateOnMainThread()
-            }
+            self.dispatchStateOnMainThread()
             
         } else {
             self.executeOperation(maxFailures)
