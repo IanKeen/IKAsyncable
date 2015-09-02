@@ -19,6 +19,22 @@ public class IKAsyncTableViewDelegate : IKAsyncOperationManager, UITableViewDele
             let tableView = self.tableView,
             let indexPath = tableView.indexPathForCell(asyncable) {
                 self.operations.removeValueForKey(indexPath)
+                
+                if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+                    self.handleCell(cell, indexPath: indexPath)
+                }
+        }
+    }
+    override public func resetOperations() {
+        super.resetOperations()
+        
+        if let tableView = self.tableView,
+            let indexPaths = tableView.indexPathsForVisibleRows() as? [NSIndexPath] {
+            for indexPath in indexPaths  {
+                if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+                    self.handleCell(cell, indexPath: indexPath)
+                }
+            }
         }
     }
     
@@ -27,14 +43,17 @@ public class IKAsyncTableViewDelegate : IKAsyncOperationManager, UITableViewDele
         self.tableView = tableView
         self.stateChange = self.operationStateChanged
         
+        self.handleCell(cell, indexPath: indexPath)
+    }
+    
+    //MARK: - Private Functions
+    private func handleCell(cell: UITableViewCell, indexPath: NSIndexPath) {
         if let cell = cell as? IKAsyncable {
             let operation = self.addOperationIfNeeded(indexPath, operation: cell.ikAsyncOperation())
             self.handleAsyncableState(indexPath)
             self.dispatchState(operation, asyncable: cell)
         }
     }
-    
-    //MARK: - Private Functions
     private func operationStateChanged(operation: IKAsyncOperation) {
         let indexPath = NSIndexPath(forRow: operation.indexPath.row, inSection: operation.indexPath.section)
         
