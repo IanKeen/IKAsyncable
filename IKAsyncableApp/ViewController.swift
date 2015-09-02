@@ -17,8 +17,4 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.registerClass(MyCell.self, forCellReuseIdentifier: "cell")
     }
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        self.tableView.reloadData()
-    }
 }
