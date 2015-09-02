@@ -9,7 +9,7 @@
 import UIKit
 
 @availability(iOS, introduced=8.0)
-public final class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, UICollectionViewDelegate {
+public class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, UICollectionViewDelegate {
     //MARK : - Private Properties
     private weak var collectionView: UICollectionView?
     

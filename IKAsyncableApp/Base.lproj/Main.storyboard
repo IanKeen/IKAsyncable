@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="LN8-dH-HfR" id="ZZi-Xo-NXf"/>
-                                    <outlet property="delegate" destination="hgA-DH-Fcz" id="9Lz-wM-rWZ"/>
+                                    <outlet property="delegate" destination="hgA-DH-Fcz" id="vqS-91-Cz7"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -35,19 +35,13 @@
                     </view>
                     <connections>
                         <outlet property="dataSource" destination="LN8-dH-HfR" id="rma-Cs-LMS"/>
-                        <outlet property="delegate" destination="hgA-DH-Fcz" id="EQg-ff-CAy"/>
+                        <outlet property="delegate" destination="hgA-DH-Fcz" id="ukq-OD-UP9"/>
                         <outlet property="tableView" destination="Lfa-Dz-5eD" id="2DR-Fb-2JQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="LN8-dH-HfR" customClass="MyDataSource" customModule="IKAsyncable" customModuleProvider="target"/>
-                <customObject id="hgA-DH-Fcz" customClass="IKAsyncTableViewDelegate" customModule="IKAsyncable" customModuleProvider="target">
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="maxNumberOfFailures">
-                            <integer key="value" value="3"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </customObject>
+                <customObject id="hgA-DH-Fcz" customClass="MyDelegate" customModule="IKAsyncable" customModuleProvider="target"/>
             </objects>
         </scene>
     </scenes>

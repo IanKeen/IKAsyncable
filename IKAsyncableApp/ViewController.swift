@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var dataSource: MyDataSource!
-    @IBOutlet private var delegate: IKAsyncTableViewDelegate!
+    @IBOutlet private var delegate: MyDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()

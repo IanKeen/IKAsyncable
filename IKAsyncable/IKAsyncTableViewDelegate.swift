@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class IKAsyncTableViewDelegate : IKAsyncOperationManager, UITableViewDelegate {
+public class IKAsyncTableViewDelegate : IKAsyncOperationManager, UITableViewDelegate {
     //MARK : - Private Properties
     private weak var tableView: UITableView?
     

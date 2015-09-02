@@ -21,6 +21,7 @@
 		32F65A621B96919000614E7E /* IKAsyncOperationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A611B96919000614E7E /* IKAsyncOperationState.swift */; };
 		32F65A641B96920900614E7E /* IKAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A631B96920900614E7E /* IKAsyncOperation.swift */; };
 		32F65A661B96922A00614E7E /* IKAsyncOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */; };
+		32F65A681B96AB6A00614E7E /* MyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A671B96AB6A00614E7E /* MyDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		32F65A611B96919000614E7E /* IKAsyncOperationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationState.swift; sourceTree = "<group>"; };
 		32F65A631B96920900614E7E /* IKAsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperation.swift; sourceTree = "<group>"; };
 		32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationManager.swift; sourceTree = "<group>"; };
+		32F65A671B96AB6A00614E7E /* MyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				32F65A571B968C3600614E7E /* MyCell.swift */,
 				32F65A581B968C3600614E7E /* MyDataSource.swift */,
+				32F65A671B96AB6A00614E7E /* MyDelegate.swift */,
 				32F65A501B968AA000614E7E /* ViewController.swift */,
 				32F65A491B968AA000614E7E /* AppDelegate.swift */,
 				32F65A4A1B968AA000614E7E /* LaunchScreen.xib */,
@@ -241,6 +244,7 @@
 				32F65A621B96919000614E7E /* IKAsyncOperationState.swift in Sources */,
 				32F65A591B968C3600614E7E /* MyCell.swift in Sources */,
 				32F65A601B968D5400614E7E /* IKAsyncCollectionViewDelegate.swift in Sources */,
+				32F65A681B96AB6A00614E7E /* MyDelegate.swift in Sources */,
 				32F65A561B968AA000614E7E /* ViewController.swift in Sources */,
 				32F65A661B96922A00614E7E /* IKAsyncOperationManager.swift in Sources */,
 				32F65A641B96920900614E7E /* IKAsyncOperation.swift in Sources */,
