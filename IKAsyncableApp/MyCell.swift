@@ -17,7 +17,7 @@ class MyCell : UITableViewCell, IKAsyncable {
                 if (randomDelay > 3) {
                     failure(NSError(domain: "domain", code: 0, userInfo: [NSLocalizedDescriptionKey: "ERROR"]))
                 } else {
-                    success("blah blah")
+                    success("Yay!!")
                 }
             }
         }
