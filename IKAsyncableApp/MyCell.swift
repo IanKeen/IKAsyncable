@@ -9,12 +9,16 @@
 import UIKit
 
 class MyCell : UITableViewCell, IKAsyncable {
+    private var randomDelay: Double!
+    func setup(randomDelay: Double) {
+        self.randomDelay = randomDelay
+    }
+    
     func ikAsyncOperation() -> IKAsyncOperationClosure {
         return { success, failure in
-            let randomDelay = Double(arc4random_uniform(5) + 1)
-            let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(randomDelay * Double(NSEC_PER_SEC)))
+            let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(self.randomDelay * Double(NSEC_PER_SEC)))
             dispatch_after(delay, dispatch_get_main_queue()) {
-                if (randomDelay > 3) {
+                if (self.randomDelay > 3) {
                     failure(NSError(domain: "domain", code: 0, userInfo: [NSLocalizedDescriptionKey: "ERROR"]))
                 } else {
                     success("Yay!!")

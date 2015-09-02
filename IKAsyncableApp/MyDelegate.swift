@@ -10,8 +10,11 @@ import UIKit
 
 public class MyDelegate: IKAsyncTableViewDelegate {
     override public func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        super.tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
+        if let cell = cell as? MyCell {
+            let randomDelay = Double(arc4random_uniform(5) + 1)
+            cell.setup(randomDelay)
+        }
         
-        //do some stuff if needed..
+        super.tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)
     }
 }
