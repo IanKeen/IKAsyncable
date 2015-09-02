@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32F65A3E1B968A7400614E7E /* IKAsyncableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A3D1B968A7400614E7E /* IKAsyncableTests.swift */; };
+		32F65A511B968AA000614E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A491B968AA000614E7E /* AppDelegate.swift */; };
+		32F65A521B968AA000614E7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F65A4A1B968AA000614E7E /* LaunchScreen.xib */; };
+		32F65A531B968AA000614E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F65A4C1B968AA000614E7E /* Main.storyboard */; };
+		32F65A541B968AA000614E7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F65A4E1B968AA000614E7E /* Images.xcassets */; };
+		32F65A561B968AA000614E7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A501B968AA000614E7E /* ViewController.swift */; };
+		32F65A591B968C3600614E7E /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A571B968C3600614E7E /* MyCell.swift */; };
+		32F65A5A1B968C3600614E7E /* MyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A581B968C3600614E7E /* MyDataSource.swift */; };
+		32F65A5C1B968C4800614E7E /* IKAsyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5B1B968C4800614E7E /* IKAsyncable.swift */; };
+		32F65A5E1B968C8300614E7E /* IKAsyncTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5D1B968C8300614E7E /* IKAsyncTableViewDelegate.swift */; };
+		32F65A601B968D5400614E7E /* IKAsyncCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5F1B968D5400614E7E /* IKAsyncCollectionViewDelegate.swift */; };
+		32F65A621B96919000614E7E /* IKAsyncOperationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A611B96919000614E7E /* IKAsyncOperationState.swift */; };
+		32F65A641B96920900614E7E /* IKAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A631B96920900614E7E /* IKAsyncOperation.swift */; };
+		32F65A661B96922A00614E7E /* IKAsyncOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F65A381B968A7400614E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F65A1A1B968A7400614E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F65A211B968A7400614E7E;
+			remoteInfo = IKAsyncable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32F65A221B968A7400614E7E /* IKAsyncable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKAsyncable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F65A371B968A7400614E7E /* IKAsyncableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IKAsyncableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F65A3C1B968A7400614E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F65A3D1B968A7400614E7E /* IKAsyncableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKAsyncableTests.swift; sourceTree = "<group>"; };
+		32F65A491B968AA000614E7E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32F65A4B1B968AA000614E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32F65A4D1B968AA000614E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32F65A4E1B968AA000614E7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32F65A4F1B968AA000614E7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F65A501B968AA000614E7E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32F65A571B968C3600614E7E /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		32F65A581B968C3600614E7E /* MyDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDataSource.swift; sourceTree = "<group>"; };
+		32F65A5B1B968C4800614E7E /* IKAsyncable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncable.swift; sourceTree = "<group>"; };
+		32F65A5D1B968C8300614E7E /* IKAsyncTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncTableViewDelegate.swift; sourceTree = "<group>"; };
+		32F65A5F1B968D5400614E7E /* IKAsyncCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		32F65A611B96919000614E7E /* IKAsyncOperationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationState.swift; sourceTree = "<group>"; };
+		32F65A631B96920900614E7E /* IKAsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperation.swift; sourceTree = "<group>"; };
+		32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F65A1F1B968A7400614E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F65A341B968A7400614E7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F65A191B968A7400614E7E = {
+			isa = PBXGroup;
+			children = (
+				32F65A471B968AA000614E7E /* IKAsyncable */,
+				32F65A481B968AA000614E7E /* IKAsyncableApp */,
+				32F65A3A1B968A7400614E7E /* IKAsyncableTests */,
+				32F65A231B968A7400614E7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32F65A231B968A7400614E7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F65A221B968A7400614E7E /* IKAsyncable.app */,
+				32F65A371B968A7400614E7E /* IKAsyncableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F65A3A1B968A7400614E7E /* IKAsyncableTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F65A3D1B968A7400614E7E /* IKAsyncableTests.swift */,
+				32F65A3B1B968A7400614E7E /* Supporting Files */,
+			);
+			path = IKAsyncableTests;
+			sourceTree = "<group>";
+		};
+		32F65A3B1B968A7400614E7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F65A3C1B968A7400614E7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F65A471B968AA000614E7E /* IKAsyncable */ = {
+			isa = PBXGroup;
+			children = (
+				32F65A5B1B968C4800614E7E /* IKAsyncable.swift */,
+				32F65A5D1B968C8300614E7E /* IKAsyncTableViewDelegate.swift */,
+				32F65A5F1B968D5400614E7E /* IKAsyncCollectionViewDelegate.swift */,
+				32F65A611B96919000614E7E /* IKAsyncOperationState.swift */,
+				32F65A631B96920900614E7E /* IKAsyncOperation.swift */,
+				32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */,
+			);
+			path = IKAsyncable;
+			sourceTree = "<group>";
+		};
+		32F65A481B968AA000614E7E /* IKAsyncableApp */ = {
+			isa = PBXGroup;
+			children = (
+				32F65A571B968C3600614E7E /* MyCell.swift */,
+				32F65A581B968C3600614E7E /* MyDataSource.swift */,
+				32F65A501B968AA000614E7E /* ViewController.swift */,
+				32F65A491B968AA000614E7E /* AppDelegate.swift */,
+				32F65A4A1B968AA000614E7E /* LaunchScreen.xib */,
+				32F65A4C1B968AA000614E7E /* Main.storyboard */,
+				32F65A4E1B968AA000614E7E /* Images.xcassets */,
+				32F65A4F1B968AA000614E7E /* Info.plist */,
+			);
+			path = IKAsyncableApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F65A211B968A7400614E7E /* IKAsyncable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F65A411B968A7400614E7E /* Build configuration list for PBXNativeTarget "IKAsyncable" */;
+			buildPhases = (
+				32F65A1E1B968A7400614E7E /* Sources */,
+				32F65A1F1B968A7400614E7E /* Frameworks */,
+				32F65A201B968A7400614E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IKAsyncable;
+			productName = IKAsyncable;
+			productReference = 32F65A221B968A7400614E7E /* IKAsyncable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F65A361B968A7400614E7E /* IKAsyncableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F65A441B968A7400614E7E /* Build configuration list for PBXNativeTarget "IKAsyncableTests" */;
+			buildPhases = (
+				32F65A331B968A7400614E7E /* Sources */,
+				32F65A341B968A7400614E7E /* Frameworks */,
+				32F65A351B968A7400614E7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F65A391B968A7400614E7E /* PBXTargetDependency */,
+			);
+			name = IKAsyncableTests;
+			productName = IKAsyncableTests;
+			productReference = 32F65A371B968A7400614E7E /* IKAsyncableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F65A1A1B968A7400614E7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Mustard;
+				TargetAttributes = {
+					32F65A211B968A7400614E7E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					32F65A361B968A7400614E7E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 32F65A211B968A7400614E7E;
+					};
+				};
+			};
+			buildConfigurationList = 32F65A1D1B968A7400614E7E /* Build configuration list for PBXProject "IKAsyncable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F65A191B968A7400614E7E;
+			productRefGroup = 32F65A231B968A7400614E7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F65A211B968A7400614E7E /* IKAsyncable */,
+				32F65A361B968A7400614E7E /* IKAsyncableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F65A201B968A7400614E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F65A541B968AA000614E7E /* Images.xcassets in Resources */,
+				32F65A521B968AA000614E7E /* LaunchScreen.xib in Resources */,
+				32F65A531B968AA000614E7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F65A351B968A7400614E7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F65A1E1B968A7400614E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F65A5E1B968C8300614E7E /* IKAsyncTableViewDelegate.swift in Sources */,
+				32F65A5C1B968C4800614E7E /* IKAsyncable.swift in Sources */,
+				32F65A621B96919000614E7E /* IKAsyncOperationState.swift in Sources */,
+				32F65A591B968C3600614E7E /* MyCell.swift in Sources */,
+				32F65A601B968D5400614E7E /* IKAsyncCollectionViewDelegate.swift in Sources */,
+				32F65A561B968AA000614E7E /* ViewController.swift in Sources */,
+				32F65A661B96922A00614E7E /* IKAsyncOperationManager.swift in Sources */,
+				32F65A641B96920900614E7E /* IKAsyncOperation.swift in Sources */,
+				32F65A5A1B968C3600614E7E /* MyDataSource.swift in Sources */,
+				32F65A511B968AA000614E7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F65A331B968A7400614E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F65A3E1B968A7400614E7E /* IKAsyncableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F65A391B968A7400614E7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F65A211B968A7400614E7E /* IKAsyncable */;
+			targetProxy = 32F65A381B968A7400614E7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32F65A4A1B968AA000614E7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F65A4B1B968AA000614E7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		32F65A4C1B968AA000614E7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F65A4D1B968AA000614E7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32F65A3F1B968A7400614E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32F65A401B968A7400614E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F65A421B968A7400614E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/IKAsyncableApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32F65A431B968A7400614E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/IKAsyncableApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32F65A451B968A7400614E7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IKAsyncableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKAsyncable.app/IKAsyncable";
+			};
+			name = Debug;
+		};
+		32F65A461B968A7400614E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IKAsyncableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IKAsyncable.app/IKAsyncable";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F65A1D1B968A7400614E7E /* Build configuration list for PBXProject "IKAsyncable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F65A3F1B968A7400614E7E /* Debug */,
+				32F65A401B968A7400614E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F65A411B968A7400614E7E /* Build configuration list for PBXNativeTarget "IKAsyncable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F65A421B968A7400614E7E /* Debug */,
+				32F65A431B968A7400614E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32F65A441B968A7400614E7E /* Build configuration list for PBXNativeTarget "IKAsyncableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F65A451B968A7400614E7E /* Debug */,
+				32F65A461B968A7400614E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32F65A1A1B968A7400614E7E /* Project object */;
+}
