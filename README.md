@@ -3,8 +3,8 @@ An (almost) drop in UITableViewDelegate & UICollectionViewDelegate for better as
 
 ## Why?
 This is the basically the result of my blog post on how to properly 
-handle async tasks in table views which you can read 
-[here](http://blog.ios-developers.io/make-your-uiviewcontroller-awesynchronous/).
+handle async tasks in table views: 
+[Make your UIViewController Awesynchronous!](http://blog.ios-developers.io/make-your-uiviewcontroller-awesynchronous/).
 
 ## How to use
 Getting up and running is a peice of cake! 
