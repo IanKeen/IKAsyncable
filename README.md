@@ -68,6 +68,12 @@ reason for needing to reset the async operations you can call:
 `delegate.resetOperations()` - This will reset all async operations causing them to start again
 `delegate.resetOperation(cell)` - This will reset the operation for the passed item and cause it to start again
 
+## Handling failure
+
+You can configure `IKAsyncable` operations to retry a given number of times before reporting failure. 
+This can be adjusted by setting the `delegate.maxNumberOfFailures` property (the default is 3).
+If you want operations to retry indefinitely you can set `maxNumberOfFailures` to `IKAsyncOperationManager.UnlimitedRetries`
+
 ## The rest...
 
 This is written for Swift 1.2
