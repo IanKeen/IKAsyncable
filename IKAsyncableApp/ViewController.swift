@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  IKAsyncTableViewDelegate_temp
 //
 //  Created by Ian Keen on 27/08/2015.
 //  Copyright (c) 2015 Mustard. All rights reserved.
@@ -13,8 +12,27 @@ class ViewController: UIViewController {
     @IBOutlet private var dataSource: MyDataSource!
     @IBOutlet private var delegate: MyDelegate!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.tableView.registerClass(MyCell.self, forCellReuseIdentifier: "cell")
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.getPhotos { urls in
+            self.dataSource.urls = urls
+            self.delegate.urls = urls
+            self.tableView.reloadData()
+        }
+    }
+    
+    let apiUrl = "http://jsonplaceholder.typicode.com/photos"
+    private func getPhotos(result: [String] -> Void) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            if
+                let url  = NSURL(string: self.apiUrl),
+                let data = NSData(contentsOfURL: url),
+                let object = NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil)! as? NSArray,
+                let urls = object.valueForKeyPath("url") as? [String] {
+                    dispatch_async(dispatch_get_main_queue()) {
+                        result(urls)
+                    }
+            }
+        }
     }
 }
