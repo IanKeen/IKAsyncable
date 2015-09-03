@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32F65A3E1B968A7400614E7E /* IKAsyncableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A3D1B968A7400614E7E /* IKAsyncableTests.swift */; };
 		32F65A511B968AA000614E7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A491B968AA000614E7E /* AppDelegate.swift */; };
 		32F65A521B968AA000614E7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F65A4A1B968AA000614E7E /* LaunchScreen.xib */; };
 		32F65A531B968AA000614E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F65A4C1B968AA000614E7E /* Main.storyboard */; };
@@ -22,6 +21,13 @@
 		32F65A641B96920900614E7E /* IKAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A631B96920900614E7E /* IKAsyncOperation.swift */; };
 		32F65A661B96922A00614E7E /* IKAsyncOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */; };
 		32F65A681B96AB6A00614E7E /* MyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A671B96AB6A00614E7E /* MyDelegate.swift */; };
+		94E493561B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E493551B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift */; };
+		94E493571B96D48800FA67D8 /* IKAsyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5B1B968C4800614E7E /* IKAsyncable.swift */; };
+		94E493581B96D48800FA67D8 /* IKAsyncTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5D1B968C8300614E7E /* IKAsyncTableViewDelegate.swift */; };
+		94E493591B96D48800FA67D8 /* IKAsyncCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5F1B968D5400614E7E /* IKAsyncCollectionViewDelegate.swift */; };
+		94E4935A1B96D48800FA67D8 /* IKAsyncOperationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A611B96919000614E7E /* IKAsyncOperationState.swift */; };
+		94E4935B1B96D48800FA67D8 /* IKAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A631B96920900614E7E /* IKAsyncOperation.swift */; };
+		94E4935C1B96D48800FA67D8 /* IKAsyncOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 		32F65A221B968A7400614E7E /* IKAsyncable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKAsyncable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F65A371B968A7400614E7E /* IKAsyncableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IKAsyncableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F65A3C1B968A7400614E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32F65A3D1B968A7400614E7E /* IKAsyncableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKAsyncableTests.swift; sourceTree = "<group>"; };
 		32F65A491B968AA000614E7E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32F65A4B1B968AA000614E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		32F65A4D1B968AA000614E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 		32F65A631B96920900614E7E /* IKAsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperation.swift; sourceTree = "<group>"; };
 		32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationManager.swift; sourceTree = "<group>"; };
 		32F65A671B96AB6A00614E7E /* MyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegate.swift; sourceTree = "<group>"; };
+		94E493551B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,7 @@
 		32F65A3A1B968A7400614E7E /* IKAsyncableTests */ = {
 			isa = PBXGroup;
 			children = (
-				32F65A3D1B968A7400614E7E /* IKAsyncableTests.swift */,
+				94E493551B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift */,
 				32F65A3B1B968A7400614E7E /* Supporting Files */,
 			);
 			path = IKAsyncableTests;
@@ -257,7 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F65A3E1B968A7400614E7E /* IKAsyncableTests.swift in Sources */,
+				94E493571B96D48800FA67D8 /* IKAsyncable.swift in Sources */,
+				94E493581B96D48800FA67D8 /* IKAsyncTableViewDelegate.swift in Sources */,
+				94E493591B96D48800FA67D8 /* IKAsyncCollectionViewDelegate.swift in Sources */,
+				94E4935A1B96D48800FA67D8 /* IKAsyncOperationState.swift in Sources */,
+				94E4935B1B96D48800FA67D8 /* IKAsyncOperation.swift in Sources */,
+				94E4935C1B96D48800FA67D8 /* IKAsyncOperationManager.swift in Sources */,
+				94E493561B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +461,7 @@
 				32F65A431B968A7400614E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32F65A441B968A7400614E7E /* Build configuration list for PBXNativeTarget "IKAsyncableTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +470,7 @@
 				32F65A461B968A7400614E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
