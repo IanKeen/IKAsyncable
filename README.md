@@ -7,7 +7,7 @@ handle async tasks in table views:
 [Make your UIViewController Awesynchronous!](http://blog.ios-developers.io/make-your-uiviewcontroller-awesynchronous/).
 
 ## How to use
-Getting up and running is a peice of cake! 
+Getting up and running is a peice of cake... No matter if you are working with a new or existing codebase!
 If you currently don't use a delegate in your `UITableView` or `UICollectionView` 
 you can simply hook up an instance of `IKAsyncTableViewDelegate` or `IKAsyncCollectionViewDelegate`
 
