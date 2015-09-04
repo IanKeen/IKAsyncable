@@ -21,6 +21,7 @@
 		32F65A641B96920900614E7E /* IKAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A631B96920900614E7E /* IKAsyncOperation.swift */; };
 		32F65A661B96922A00614E7E /* IKAsyncOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */; };
 		32F65A681B96AB6A00614E7E /* MyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A671B96AB6A00614E7E /* MyDelegate.swift */; };
+		32F65A781B991D7600614E7E /* IKAsyncOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A771B991D7600614E7E /* IKAsyncOperationTests.swift */; };
 		94E493561B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E493551B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift */; };
 		94E493571B96D48800FA67D8 /* IKAsyncable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5B1B968C4800614E7E /* IKAsyncable.swift */; };
 		94E493581B96D48800FA67D8 /* IKAsyncTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F65A5D1B968C8300614E7E /* IKAsyncTableViewDelegate.swift */; };
@@ -59,6 +60,7 @@
 		32F65A631B96920900614E7E /* IKAsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperation.swift; sourceTree = "<group>"; };
 		32F65A651B96922A00614E7E /* IKAsyncOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationManager.swift; sourceTree = "<group>"; };
 		32F65A671B96AB6A00614E7E /* MyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegate.swift; sourceTree = "<group>"; };
+		32F65A771B991D7600614E7E /* IKAsyncOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationTests.swift; sourceTree = "<group>"; };
 		94E493551B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IKAsyncOperationManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				94E493551B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift */,
+				32F65A771B991D7600614E7E /* IKAsyncOperationTests.swift */,
 				32F65A3B1B968A7400614E7E /* Supporting Files */,
 			);
 			path = IKAsyncableTests;
@@ -267,6 +270,7 @@
 				94E493581B96D48800FA67D8 /* IKAsyncTableViewDelegate.swift in Sources */,
 				94E493591B96D48800FA67D8 /* IKAsyncCollectionViewDelegate.swift in Sources */,
 				94E4935A1B96D48800FA67D8 /* IKAsyncOperationState.swift in Sources */,
+				32F65A781B991D7600614E7E /* IKAsyncOperationTests.swift in Sources */,
 				94E4935B1B96D48800FA67D8 /* IKAsyncOperation.swift in Sources */,
 				94E4935C1B96D48800FA67D8 /* IKAsyncOperationManager.swift in Sources */,
 				94E493561B96D16C00FA67D8 /* IKAsyncOperationManagerTests.swift in Sources */,
