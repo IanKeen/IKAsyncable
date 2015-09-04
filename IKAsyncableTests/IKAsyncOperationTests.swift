@@ -26,7 +26,7 @@ class IKAsyncOperationTests: XCTestCase {
         let indexPath = NSIndexPath(forRow: 0, inSection: 0)
         let operation = IKAsyncOperation(
             indexPath: indexPath,
-            operation: exampleSuccessfulOperation()) { op in
+            operation: exampleSuccessfulOperation(0)) { op in
                 if let state = op.state {
                     switch state {
                     case .Complete(let result):
@@ -148,9 +148,6 @@ class IKAsyncOperationTests: XCTestCase {
     }
     
     //MARK : - Helpers
-    func exampleSuccessfulOperation() -> IKAsyncOperationClosure {
-        return exampleSuccessfulOperation(0)
-    }
     func exampleSuccessfulOperation(failCount: Int) -> IKAsyncOperationClosure {
         var failures = 0
         
