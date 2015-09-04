@@ -37,7 +37,25 @@ class IKAsyncOperationManagerTests: XCTestCase {
         // then
         XCTAssertEqual(mgr.operations.count, 1, "There should be 1 operation in the cache after add the operation")
     }
-
+    
+    func testAddOperationIfNeeded_whenGivenAnExistingIndexPath_shouldNotAddTheOperationToTheCache() {
+        // given
+        let closure1: IKAsyncOperationClosure = { success, failure in }
+        let path1 = NSIndexPath(forItem: 0, inSection: 0)
+        let closure2: IKAsyncOperationClosure = { success, failure in }
+        let path2 = NSIndexPath(forItem: 0, inSection: 0)
+        
+        // sanity check
+        XCTAssertEqual(mgr.operations.count, 0, "There should be nothing in the cache to start with")
+        
+        // when
+        let first = mgr.addOperationIfNeeded(path1, operation: closure2)
+        let second = mgr.addOperationIfNeeded(path2, operation: closure2)
+        
+        // then
+        XCTAssertEqual(mgr.operations.count, 1, "There should be 1 operation in the cache after adding two operations with the same path")
+    }
+    
     func testResetOperations_shouldRemoveAllOperations() {
         // given
         let closure: IKAsyncOperationClosure = { success, failure in }
