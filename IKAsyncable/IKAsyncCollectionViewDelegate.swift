@@ -9,7 +9,7 @@
 import UIKit
 
 @availability(iOS, introduced=8.0)
-public class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, UICollectionViewDelegate {
+public class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, IKAsyncableManager, UICollectionViewDelegate {
     //MARK : - Private Properties
     private weak var collectionView: UICollectionView?
     
@@ -36,6 +36,15 @@ public class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, UICollecti
                         self.handleCell(cell, indexPath: indexPath)
                     }
                 }
+        }
+    }
+    public func resetOperation(indexPath: NSIndexPath) {
+        self.operations.removeValueForKey(indexPath)
+        
+        if let collectionView = self.collectionView {
+            if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
+                self.handleCell(cell, indexPath: indexPath)
+            }
         }
     }
     
@@ -67,7 +76,7 @@ public class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, UICollecti
     }
     private func dispatchState(operation: IKAsyncOperation, asyncable: IKAsyncable) {
         if let state = operation.state {
-            asyncable.ikAsyncOperationState(state)
+            asyncable.ikAsyncOperationState(self, state: state)
         }
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class IKAsyncTableViewDelegate : IKAsyncOperationManager, UITableViewDelegate {
+public class IKAsyncTableViewDelegate : IKAsyncOperationManager, IKAsyncableManager, UITableViewDelegate {
     //MARK : - Private Properties
     private weak var tableView: UITableView?
     
@@ -34,6 +34,15 @@ public class IKAsyncTableViewDelegate : IKAsyncOperationManager, UITableViewDele
                 if let cell = tableView.cellForRowAtIndexPath(indexPath) {
                     self.handleCell(cell, indexPath: indexPath)
                 }
+            }
+        }
+    }
+    public func resetOperation(indexPath: NSIndexPath) {
+        self.operations.removeValueForKey(indexPath)
+        
+        if let tableView = self.tableView {
+            if let cell = tableView.cellForRowAtIndexPath(indexPath) {
+                self.handleCell(cell, indexPath: indexPath)
             }
         }
     }
@@ -66,7 +75,7 @@ public class IKAsyncTableViewDelegate : IKAsyncOperationManager, UITableViewDele
     }
     private func dispatchState(operation: IKAsyncOperation, asyncable: IKAsyncable) {
         if let state = operation.state {
-            asyncable.ikAsyncOperationState(state)
+            asyncable.ikAsyncOperationState(self, state: state)
         }
     }
 }

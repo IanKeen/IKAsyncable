@@ -13,7 +13,11 @@ public typealias IKAsyncFailure = (NSError) -> Void
 public typealias IKAsyncOperationClosure = (success: IKAsyncSuccess, failure: IKAsyncFailure) -> Void
 public typealias IKAsyncStateChange = (IKAsyncOperation) -> Void
 
+public protocol IKAsyncableManager {
+    func resetOperation(asyncable: IKAsyncable)
+}
+
 public protocol IKAsyncable {
     func ikAsyncOperation() -> IKAsyncOperationClosure
-    func ikAsyncOperationState(state: IKAsyncOperationState)
+    func ikAsyncOperationState(manager: IKAsyncableManager, state: IKAsyncOperationState)
 }

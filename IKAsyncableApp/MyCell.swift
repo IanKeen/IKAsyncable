@@ -28,7 +28,7 @@ class MyCell : UITableViewCell, IKAsyncable {
             }
         }
     }
-    func ikAsyncOperationState(state: IKAsyncOperationState) {
+    func ikAsyncOperationState(manager: IKAsyncableManager, state: IKAsyncOperationState) {
         self.imgView.image = nil
         
         let color: UIColor
@@ -40,6 +40,7 @@ class MyCell : UITableViewCell, IKAsyncable {
             color = .whiteColor()
         case .Failed(_):
             color = .redColor()
+            //manager.resetOperation(self)
         }
         
         self.backgroundColor = color
