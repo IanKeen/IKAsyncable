@@ -1,5 +1,5 @@
 //
-//  IKAsyncOperationState.swift
+//  IKAsyncTableViewDelegate.swift
 //  IKAsyncable
 //
 //  Created by Ian Keen on 1/09/2015.
