@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             if
                 let url  = NSURL(string: self.apiUrl),
                 let data = NSData(contentsOfURL: url),
-                let object = NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil)! as? NSArray,
+                let object = try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as? NSArray,
                 let urls = object.valueForKeyPath("url") as? [String] {
                     dispatch_async(dispatch_get_main_queue()) {
                         result(urls)

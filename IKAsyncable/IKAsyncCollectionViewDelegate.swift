@@ -8,7 +8,7 @@
 
 import UIKit
 
-@availability(iOS, introduced=8.0)
+@available(iOS, introduced=8.0)
 public class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, IKAsyncableManager, UICollectionViewDelegate {
     //MARK : - Private Properties
     private weak var collectionView: UICollectionView?
@@ -29,13 +29,12 @@ public class IKAsyncCollectionViewDelegate : IKAsyncOperationManager, IKAsyncabl
     override public func resetOperations() {
         super.resetOperations()
         
-        if let collectionView = self.collectionView,
-            let indexPaths = collectionView.indexPathsForVisibleItems() as? [NSIndexPath] {
-                for indexPath in indexPaths  {
-                    if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
-                        self.handleCell(cell, indexPath: indexPath)
-                    }
+        if let collectionView = self.collectionView {
+            for indexPath in collectionView.indexPathsForVisibleItems() {
+                if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
+                    self.handleCell(cell, indexPath: indexPath)
                 }
+            }
         }
     }
     public func resetOperation(indexPath: NSIndexPath) {

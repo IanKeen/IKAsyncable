@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum IKAsyncOperationState : Printable {
+public enum IKAsyncOperationState : CustomStringConvertible {
     case InProgress
     case Complete(Any)
     case Failed(NSError)
