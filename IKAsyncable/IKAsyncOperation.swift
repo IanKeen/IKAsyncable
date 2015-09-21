@@ -35,7 +35,6 @@ public final class IKAsyncOperation {
     public func performOperation(maxFailures: Int) {
         if let _ = self.state {
             self.dispatchStateOnMainThread()
-            
         } else {
             self.executeOperation(maxFailures)
         }

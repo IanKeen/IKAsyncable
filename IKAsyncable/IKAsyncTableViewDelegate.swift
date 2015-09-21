@@ -29,7 +29,7 @@ public class IKAsyncTableViewDelegate : IKAsyncOperationManager, IKAsyncableMana
         super.resetOperations()
         
         if let tableView = self.tableView,
-            let indexPaths = tableView.indexPathsForVisibleRows() as? [NSIndexPath] {
+            let indexPaths = tableView.indexPathsForVisibleRows {
             for indexPath in indexPaths  {
                 if let cell = tableView.cellForRowAtIndexPath(indexPath) {
                     self.handleCell(cell, indexPath: indexPath)
