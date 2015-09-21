@@ -76,7 +76,7 @@ If you want operations to retry indefinitely you can set `maxNumberOfFailures` t
 
 ## The rest...
 
-This is written for Swift 1.2
+This is written for Swift 2
 
 Check out the included app to see it in action; 
 I've tried to make this simple to use and as easy to integrate into existing systems as I can.
